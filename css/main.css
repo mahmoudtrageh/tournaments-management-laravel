@@ -1,0 +1,228 @@
+/* public */
+
+@font-face {
+    font-family: "Droid";
+    src: url("../fonts/droid.ttf");
+}
+
+body {
+    direction: rtl;
+    font-family: "Droid", sans-serif !important;
+}
+
+.logo img {
+    width: 14% !important;
+}
+
+.statics {
+    font-size: 20px;
+    min-height: 500px;
+}
+
+.main-content li,
+.main-content div {
+    font-size: 15px !important;
+}
+
+footer {
+    background-color: #fff;
+}
+
+.dropdown-list {
+    height: 300px;
+}
+
+.noti:hover,
+.mess:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.noti,
+.mess {
+    font-size: 13px;
+}
+
+.anyClass {
+    height: 120px;
+    overflow-y: scroll;
+}
+
+.messages,
+.notifications {
+    font-size: 15px;
+}
+
+label {
+    font-size: 16px;
+}
+
+/* end public */
+
+/* data table start */
+
+table tbody tr {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+table thead {
+    background-color: #fcb040;
+    color:#212529;
+}
+
+.badge-success {
+    background-color: #373737;
+    padding: 5px;
+}
+
+.statics {
+    font-size: 26px;
+}
+
+.thead_dark {
+    background-color: #fcb040;
+    color: white;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    padding-top: 0px !important;
+    white-space: nowrap;
+    color: #156ac7 !important;
+}
+
+table.dataTable > tbody > tr.child ul.dtr-details {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.table.dataTable.dtr-inline.collapsed
+    > tbody
+    > tr[role="row"]
+    > td:first-child:before,
+table.dataTable.dtr-inline.collapsed
+    > tbody
+    > tr[role="row"]
+    > th:first-child:before {
+    top: 9px;
+    left: 4px;
+    height: 14px;
+    width: 14px;
+    display: block;
+    position: absolute;
+    color: white;
+    border: 2px solid white;
+    border-radius: 14px;
+    box-shadow: 0 0 3px #444;
+    box-sizing: content-box;
+    text-align: center;
+    text-indent: 0 !important;
+    font-family: "Courier New", Courier, monospace;
+    line-height: 14px;
+    content: "+";
+    background-color: #60b6ab;
+}
+
+.table.dataTable.dtr-inline.collapsed
+    > tbody
+    > tr.parent
+    > td:first-child:before,
+table.dataTable.dtr-inline.collapsed
+    > tbody
+    > tr.parent
+    > th:first-child:before {
+    content: "-";
+    background-color: #d33333;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff !important;
+    background-color: #373737;
+    border-color: #373737 !important;
+    border-radius: 8px !important;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #156ac7 !important;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+.dataTables_info,
+.dataTables_length {
+    float: right;
+}
+#files_list_paginate,
+.dataTables_filter {
+    float: left;
+}
+
+table {
+    border-collapse: separate;
+}
+
+/* data table end */
+
+/* drop down menu */
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu,
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+    background-color: #156ac7;
+}
+
+/* when hovering over a .mainmenu item,
+    display the submenu inside it.
+    we're changing the submenu's max-height from 0 to 200px;
+  */
+
+.mainmenu li:hover .submenu {
+    display: block;
+    max-height: 200px;
+}
+
+/*
+    we now overwrite the background-color for .submenu links only.
+    CSS reads down the page, so code at the bottom will overwrite the code at the top.
+  */
+
+.submenu a {
+    background-color: #999;
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+    background-color: #666;
+}
+
+/* this is the initial state of all submenus.
+    we set it to max-height: 0, and hide the overflowed content.
+  */
+.submenu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+}
+
+/* drop down menu */

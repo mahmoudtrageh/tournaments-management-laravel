@@ -1,0 +1,17 @@
+[2020-06-30 15:58:11] local.ERROR: Erroneous data format for unserializing 'Symfony\Component\Routing\CompiledRoute' {"exception":"[object] (ErrorException(code: 0): Erroneous data format for unserializing 'Symfony\\Component\\Routing\\CompiledRoute' at /home/y3j1ybigf5gu/public_html/main-tournaments/tournament/bootstrap/cache/routes.php:15)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Erroneous data ...', '/home/y3j1ybigf...', 15, Array)
+#1 /home/y3j1ybigf5gu/public_html/main-tournaments/tournament/bootstrap/cache/routes.php(15): unserialize('O:34:\"Illuminat...')
+#2 /home/y3j1ybigf5gu/public_html/main-tournaments/tournament/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(75): require('/home/y3j1ybigf...')
+#3 [internal function]: Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}(Object(Illuminate\\Foundation\\Application))
+#4 /home/y3j1ybigf5gu/public_html/main-tournaments/tournament/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(866): call_user_func(Object(Closure), Object(Illuminate\\Foundation\\Application))
+#5 /home/y3j1ybigf5gu/public_html/main-tournaments/tournament/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(815): Illuminate\\Foundation\\Application->fireAppCallbacks(Array)
+#6 /home/y3j1ybigf5gu/public_html/main-tournaments/tournament/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#7 /home/y3j1ybigf5gu/public_html/main-tournaments/tournament/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#8 /home/y3j1ybigf5gu/public_html/main-tournaments/tournament/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#9 /home/y3j1ybigf5gu/public_html/main-tournaments/tournament/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#10 /home/y3j1ybigf5gu/public_html/main-tournaments/tournament/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#11 /home/y3j1ybigf5gu/public_html/main-tournaments/tournament/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#12 /home/y3j1ybigf5gu/public_html/main-tournaments/tournament/index.php(21): require_once('/home/y3j1ybigf...')
+#13 {main}
+"} 
